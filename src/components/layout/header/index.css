@@ -1,0 +1,18 @@
+.navLink:hover::after {
+    right: 0;
+}
+
+.navLink::after {
+    content: '';
+    bottom: 0;
+    height: 2px;
+    left: 0;
+    position: absolute;
+    right: 100%;
+    transition: right .3s ease-out;
+    background: var(--primary-yellow);
+}
+
+.navLink {
+    position: relative;
+}
