@@ -14,7 +14,9 @@ export default function RoadStep(props: Props) {
   return (
     <>
       <div id={props.id} className="flex flex-col justify-center items-center h-[calc(80vh_-_150px)] max-lg:h-[calc(80vh_-_76px)] max-sm:[calc(50vh_-_76px)] scroll-mt-[150px] max-lg:scroll-mt-[76px] ">
-        <RoadSign step={props.step}/>
+        <FadeInSection>
+          <RoadSign step={props.step}/>
+        </FadeInSection>
       </div>
 
       <Image
