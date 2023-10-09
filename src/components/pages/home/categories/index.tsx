@@ -6,7 +6,7 @@ import { CATEGORIES_CARDS, DESCRIPTION, HEADER } from '@/components/pages/home/c
 export default function Categories() {
   return (
     <section id="categories" className="scroll-mt-[150px] max-lg:scroll-mt-[76px] ">
-      <div className="flex flex-col gap-y-[71px] py-[80px] max-w-container mx-auto px-6 md:py-[78px] lg:px-0">
+      <div className="flex flex-col gap-y-[71px] max-w-container mx-auto px-6 lg:px-0">
         <div className="flex flex-col gap-y-7">
           <h2 className="text-3xl font-semibold text-center md:text-4xlarge lg:text-start">
             {HEADER}

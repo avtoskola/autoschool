@@ -2,7 +2,7 @@ import Link from 'next/link';
 
 import PrimaryButton from '@/components/common/buttons/primary-button';
 
-const HEADER = <>Перевір свої знання з Павил дорожнього руху</>;
+const HEADER = <>Перевір свої знання з правил дорожнього руху</>;
 const DESCRIPTION = <></>;
 const BUTTON_LABEL = <>Перевірити</>;
 

@@ -7,13 +7,12 @@ import RoadSign from '@/components/pages/home/steps/road-sign';
 interface Props {
     step: number;
     text: ReactNode;
-    id?: string;
 }
 
 export default function RoadStep(props: Props) {
   return (
     <>
-      <div id={props.id} className="flex flex-col justify-center items-center h-[calc(80vh_-_150px)] max-lg:h-[calc(80vh_-_76px)] max-sm:[calc(50vh_-_76px)] scroll-mt-[150px] max-lg:scroll-mt-[76px] ">
+      <div className="flex flex-col justify-center items-center h-[calc(80vh_-_150px)] max-lg:h-[calc(80vh_-_76px)] max-sm:[calc(50vh_-_76px)]">
         <FadeInSection>
           <RoadSign step={props.step}/>
         </FadeInSection>

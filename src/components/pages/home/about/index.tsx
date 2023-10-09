@@ -14,7 +14,7 @@ const TEXT = <>
 
 export default function About() {
   return (
-    <section id="about" className="max-w-container mx-auto py-24 max-lg:px-4 scroll-mt-[150px] max-lg:scroll-mt-[76px] " >
+    <section id="about" className="max-w-container mx-auto pt-4 max-lg:px-4 scroll-mt-[150px] max-lg:scroll-mt-[76px] " >
       <GradientBorderCard
         contentClassName="!p-[5%] !gap-y-0 max-lg:!py-10"
         additionalContent={

@@ -5,8 +5,8 @@ import { ADDRESS, EMAIL, HEADER, OFFICE_TITLE, PHONE_1, PHONE_2 } from '@/compon
 
 export default function ContactInfo() {
   return (
-    <section className="max-w-container m-auto py-20 max-lg:px-4 ">
-      <h1 className="text-6xlarge font-semibold text-center mb-8 md:mb-[75px]">
+    <section id="contacts" className="max-w-container m-auto max-lg:px-4 scroll-mt-[150px] max-lg:scroll-mt-[74px]">
+      <h1 className="text-6xlarge font-semibold text-center mb-8 md:mb-[75px] max-md:text-3xlarge">
         {HEADER}
       </h1>
       <div
@@ -32,7 +32,7 @@ export default function ContactInfo() {
             </p>
           </div>
         </div>
-        <Map id="contact-map" className="min-w-[48%] max-lg:min-w-full scroll-mt-[200px] max-lg:scroll-mt-[100px]" />
+        <Map id="contact-map" className="min-w-[48%] max-lg:min-w-full scroll-mt-[200px] max-lg:scroll-mt-[100px] max-lg:max-w-full" />
       </div>
     </section>
   );

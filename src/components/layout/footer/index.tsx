@@ -9,13 +9,13 @@ export default function Footer() {
   return (
     <footer className='bg-gray-light pb-5 pt-5 lg:pt-[5.2rem] lg:pb-14 pl-4 pr-4'>
       <div className='max-w-container m-auto'>
-        <div className='flex flex-col lg:flex-row'>
+        <div className='flex max-lg:flex-col'>
           <div className="flex w-fit py-5 lg:py-0">
-            <Link href="/#home-hero" className="text-3xlarge font-semibold">
+            <Link href="/#home-hero" className="text-3xlarge font-semibold max-sm:text-large">
               САЛТІВСЬКИЙ УСТЦ ТСОУ
             </Link>
           </div>
-          <div className="flex flex-wrap md:flex-nowrap gap-5 justify-end flex-grow">
+          <div className="flex gap-5 justify-end flex-grow">
             {FOOTER_TEXT_LINKS_LIST.map((textLinksCol, index) =>
               <FooterLinksCol key={index} textLinksCol={textLinksCol}/>,
             )}
