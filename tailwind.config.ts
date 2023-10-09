@@ -29,14 +29,7 @@ module.exports = {
         container: '1140px',
       },
       backgroundImage: {
-        'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
-        'gradient-conic': 'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
-        'blue-green-grid': 'url(\'/images/grid.png\')',
-        'blue-green-grid-large': 'url(\'/images/grid-large.png\')',
-        'bright-blue-green-grid': 'url(\'/images/grid-bright.png\')',
-        'chevron-down': 'url(\'/images/icons/chevron-down.svg\')',
         'gradient-green-blue-tiles': 'url(/images/tiles-gradient-green-blue.png)',
-        map: 'url(/images/home/map.png)',
         secondary: 'linear-gradient(180deg, #F3F4F6 0%, #FFF 100%)',
       },
       boxShadow: {
