@@ -21,8 +21,8 @@ const CAR_IMAGE = {
 export default function Steps() {
   return (
     <section
-      onScroll={(e) => (e.target as HTMLDivElement)?.scrollIntoView({ block: 'end' })}
-      className={`relative bg-secondary max-h-[calc(100vh_-_150px)] max-lg:max-h-[calc(100vh_-_76px)] overflow-auto ${cls.container}`}
+      onScrollCapture={(e) => (e.target as HTMLDivElement)?.scrollIntoView({ block: 'end', inline: 'center' })}
+      className={`relative max-h-[calc(100vh_-_150px)] max-lg:max-h-[calc(100vh_-_76px)] overflow-auto ${cls.container}`}
     >
       <Image
         {...CAR_IMAGE}

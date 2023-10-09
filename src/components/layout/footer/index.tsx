@@ -2,7 +2,7 @@
 
 import Link from 'next/link';
 
-import { FOOTER_LINKS, FOOTER_TEXT_LINKS_LIST, SOCIAL_MEDIA_LINKS } from '@/components/layout/footer/constants';
+import { FOOTER_TEXT_LINKS_LIST } from '@/components/layout/footer/constants';
 import FooterLinksCol from '@/components/layout/footer/links-col';
 
 export default function Footer() {
@@ -23,25 +23,17 @@ export default function Footer() {
         </div>
         <div className="flex justify-around lg:justify-between items-end flex-wrap gap-4 lg:gap-0 mt-12">
           <div className='flex gap-6 mb-[10px] md:mb-[0] lg:gap-[43px]'>
-
-            {SOCIAL_MEDIA_LINKS.map((link) => (
-              <Link
-                className="w-[30px] h-[30px] inline-flex justify-center items-center rounded bg-transparent hover:opacity-90"
-                key={link.href}
-                href={link.href}
-              >
-                {link.icon}
-              </Link>
-            ))}
+            {/* {SOCIAL_MEDIA_LINKS.map((link) => ( */}
+            {/*  <Link */}
+            {/*    className="w-[30px] h-[30px] inline-flex justify-center items-center rounded bg-transparent hover:opacity-90" */}
+            {/*    key={link.href} */}
+            {/*    href={link.href} */}
+            {/*  > */}
+            {/*    {link.icon} */}
+            {/*  </Link> */}
+            {/* ))} */}
           </div>
           <span className='text-[13px] mb-[10px] md:mb-[0]'>© 2023 САЛТІВСЬКИЙ УСТЦ ТСОУ М. ХАРКОВА. Усі права захищені</span>
-          <div className="flex flex-wrap lg:justify-between mb-[10px] md:mb-[0]">
-            {FOOTER_LINKS.map((link) => (
-              <Link key={link.name} href={link.href} className="flex items-center mx-2">
-                <span className="pl-1 text-[13px]">{link.name}</span>
-              </Link>
-            ))}
-          </div>
         </div>
       </div>
     </footer>

@@ -10,7 +10,7 @@ interface Props {
 
 export default function FooterLinksCol(props: Props) {
   return (
-    <div className="p-2.5 flex flex-wrap flex-col basis-full md:basis-1/3">
+    <div className="py-2.5 px-5 flex flex-wrap flex-col">
       <h5 className="text-1.8xl font-bold mb-3">{props.textLinksCol.header}</h5>
       <ul>
         {props.textLinksCol.links.map((link) => (

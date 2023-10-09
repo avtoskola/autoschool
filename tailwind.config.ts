@@ -36,7 +36,7 @@ module.exports = {
         'bright-blue-green-grid': 'url(\'/images/grid-bright.png\')',
         'chevron-down': 'url(\'/images/icons/chevron-down.svg\')',
         'gradient-green-blue-tiles': 'url(/images/tiles-gradient-green-blue.png)',
-        map: 'url(/images/contact/map.png)',
+        map: 'url(/images/home/map.png)',
         secondary: 'linear-gradient(180deg, #F3F4F6 0%, #FFF 100%)',
       },
       boxShadow: {

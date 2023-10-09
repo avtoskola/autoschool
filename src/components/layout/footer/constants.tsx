@@ -25,6 +25,16 @@ export const HOME_LINKS: TextLinksColType = {
   ],
 };
 
+export const CONTACTS: TextLinksColType = {
+  header: 'Контакти',
+  links: [
+    { label: 'вул. Ахієзерів, 48/50', href: '/#contact-map' },
+    { label: 'Водафон', href: 'tel:+38 (050) 185-43-72' },
+    { label: 'Київстар', href: 'tel:+38 (096) 827-31-96' },
+    { label: 'Пошта', href: 'mailto:auto@autoschool.org.ua' },
+  ],
+};
+
 export const SOCIAL_MEDIA_LINKS = [
   {
     icon: (
@@ -122,4 +132,5 @@ export const SOCIAL_MEDIA_LINKS = [
 
 export const FOOTER_TEXT_LINKS_LIST: TextLinksColType[] = [
   HOME_LINKS,
+  CONTACTS,
 ];

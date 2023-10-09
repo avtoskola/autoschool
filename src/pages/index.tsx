@@ -1,5 +1,6 @@
 import Categories from '../components/pages/home/categories';
 import About from '@/components/pages/home/about';
+import ContactInfo from '@/components/pages/home/contact-info';
 import HeroSection from '@/components/pages/home/hero-section';
 import Steps from '@/components/pages/home/steps';
 import TryYourSkills from '@/components/pages/home/try-your-skills';
@@ -22,8 +23,12 @@ export default function Home() {
       <Categories/>
       <About/>
       <Steps/>
-      <div className="mt-24"/>
-      <BulletsCard id="documents" title={POINTS_TITLE} points={POINTS}/>
+      <div className="mt-12"/>
+      <div className="bg-secondary">
+        <div className="pt-16"/>
+        <BulletsCard id="documents" title={POINTS_TITLE} points={POINTS}/>
+        <ContactInfo/>
+      </div>
       <TryYourSkills/>
     </>
   );
