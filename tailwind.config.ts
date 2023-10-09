@@ -29,6 +29,7 @@ module.exports = {
         container: '1140px',
       },
       backgroundImage: {
+        'bright-blue-green-grid': 'url(\'/images/grid-bright.png\')',
         'gradient-green-blue-tiles': 'url(/images/tiles-gradient-green-blue.png)',
         secondary: 'linear-gradient(180deg, #F3F4F6 0%, #FFF 100%)',
       },
