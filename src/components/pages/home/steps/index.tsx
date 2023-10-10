@@ -31,20 +31,16 @@ export default function Steps() {
     setTimeout(() => {
       document.body.style.overflowY = 'unset';
     }, 1000);
-  }, 3000), []);
+  }, 6000), []);
 
   useEffect(() => {
-    const listener = (e: Event) => {
+    const listener = () => {
       if (!containerRef.current) return;
       const sectionRect = containerRef.current.getBoundingClientRect();
       const windowHeight = window.innerHeight;
+      const halfWindowHeight = windowHeight * 0.5;
 
-      if (
-        sectionRect.top >= 0 &&
-            sectionRect.bottom <= windowHeight * 0.5
-      ) {
-        e.stopImmediatePropagation();
-        e.preventDefault();
+      if (sectionRect.top >= 0 && sectionRect.bottom <= halfWindowHeight) {
         scrollIntoView();
       }
     };
