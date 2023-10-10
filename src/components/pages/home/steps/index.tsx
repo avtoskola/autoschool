@@ -1,5 +1,5 @@
 import Image from 'next/image';
-import { useRef } from 'react';
+import { useEffect, useMemo, useRef } from 'react';
 
 import cls from './steps.module.css';
 import RoadStep from '@/components/pages/home/steps/road-step';
@@ -23,11 +23,37 @@ const CAR_IMAGE = {
 export default function Steps() {
   const containerRef = useRef<HTMLDivElement | null>(null);
 
-  const scrollIntoView = throttle(() => {
+  const scrollIntoView = useMemo(() => throttle(() => {
     document.documentElement.style.scrollBehavior = 'unset';
+    document.body.style.overflowY = 'hidden';
     containerRef.current?.scrollIntoView({ block: 'start', inline: 'center', behavior: 'instant' });
     document.documentElement.style.scrollBehavior = 'smooth';
-  }, 3000);
+    setTimeout(() => {
+      document.body.style.overflowY = 'unset';
+    }, 1000);
+  }, 3000), []);
+
+  useEffect(() => {
+    const listener = (e: Event) => {
+      if (!containerRef.current) return;
+      const sectionRect = containerRef.current.getBoundingClientRect();
+      const windowHeight = window.innerHeight;
+
+      if (
+        sectionRect.top >= 0 &&
+            sectionRect.bottom <= windowHeight * 0.5
+      ) {
+        e.stopImmediatePropagation();
+        e.preventDefault();
+        scrollIntoView();
+      }
+    };
+    window.addEventListener('scroll', listener);
+
+    return () => {
+      window.removeEventListener('scroll', listener);
+    };
+  }, []);
 
   return (
     <>
