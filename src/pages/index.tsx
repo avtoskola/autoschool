@@ -35,7 +35,7 @@ export default function Home() {
       <About/>
       <div className="pt-32"/>
       <Steps/>
-      <div className="bg-secondary">
+      <div className="bg-secondary relative z-[3]">
         <div className="pt-28"/>
         <BulletsCard id="documents" title={POINTS_TITLE} points={POINTS}/>
         <div className="pt-28" />
