@@ -1,9 +1,6 @@
 import Image from 'next/image';
-import { useMemo, useRef } from 'react';
 
-import cls from './steps.module.css';
 import RoadStep from '@/components/pages/home/steps/road-step';
-import throttle from '@/utils/throttle';
 
 const ROAD_STEPS = [
   <>Записатись на навчання принести документи і підписати договір</>,
@@ -21,38 +18,19 @@ const CAR_IMAGE = {
 };
 
 export default function Steps() {
-  const containerRef = useRef<HTMLDivElement | null>(null);
-
-  const scrollIntoView = useMemo(() => throttle(() => {
-    document.documentElement.style.scrollBehavior = 'unset';
-    document.body.style.overflowY = 'hidden';
-    containerRef.current?.scrollIntoView({ block: 'start', inline: 'center', behavior: 'instant' });
-    document.documentElement.style.scrollBehavior = 'smooth';
-    setTimeout(() => {
-      document.body.style.overflowY = 'unset';
-    }, 1000);
-  }, 3000), []);
-
   return (
-    <>
-      <div ref={containerRef} id="steps" className="scroll-mt-[150px] max-lg:scroll-mt-[76px]"/>
-      <section
-        onScroll={scrollIntoView}
-        onMouseEnter={scrollIntoView}
-        className={`relative max-h-[calc(100vh_-_150px)] max-lg:max-h-[calc(100vh_-_76px)] overflow-auto ${cls.container}`}
-      >
-        <Image
-          id="steps"
-          {...CAR_IMAGE}
-          alt='car'
-          className="max-w-[180px] sticky left-1/2 top-20  rotate-180 -translate-x-1/2 z-[3] max-md:max-w-[90px]"
-        />
-        <div className="mt-[-375px] max-md:mt-[-187px] max-w-container mx-auto relative grid grid-cols-[1fr_200px_1fr] max-md:grid-cols-[1fr_100px_1fr] ">
-          {ROAD_STEPS.map((text, index) => (
-            <RoadStep step={index + 1} text={text} key={index} />
-          ))}
-        </div>
-      </section>
-    </>
+    <section id="steps" className="relative h-full scroll-mt-[150px] max-lg:scroll-mt-[76px]">
+      <Image
+        id="steps"
+        {...CAR_IMAGE}
+        alt='car'
+        className="max-w-[180px] sticky left-1/2 top-[35%] rotate-180 -translate-x-1/2 z-[3] mb-[-375px] max-lg:mb-[-188px] max-md:max-w-[90px]"
+      />
+      <div className="max-w-container mx-auto relative grid grid-cols-[1fr_200px_1fr] max-md:grid-cols-[1fr_100px_1fr] ">
+        {ROAD_STEPS.map((text, index) => (
+          <RoadStep step={index + 1} text={text} key={index} />
+        ))}
+      </div>
+    </section>
   );
 }
