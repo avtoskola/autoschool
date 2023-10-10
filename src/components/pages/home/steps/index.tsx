@@ -1,5 +1,5 @@
 import Image from 'next/image';
-import { useEffect, useMemo, useRef } from 'react';
+import { useMemo, useRef } from 'react';
 
 import cls from './steps.module.css';
 import RoadStep from '@/components/pages/home/steps/road-step';
@@ -31,31 +31,14 @@ export default function Steps() {
     setTimeout(() => {
       document.body.style.overflowY = 'unset';
     }, 1000);
-  }, 6000), []);
-
-  useEffect(() => {
-    const listener = () => {
-      if (!containerRef.current) return;
-      const sectionRect = containerRef.current.getBoundingClientRect();
-      const windowHeight = window.innerHeight;
-      const halfWindowHeight = windowHeight * 0.5;
-
-      if (sectionRect.top >= 0 && sectionRect.bottom <= halfWindowHeight) {
-        scrollIntoView();
-      }
-    };
-    window.addEventListener('scroll', listener);
-
-    return () => {
-      window.removeEventListener('scroll', listener);
-    };
-  }, []);
+  }, 3000), []);
 
   return (
     <>
       <div ref={containerRef} id="steps" className="scroll-mt-[150px] max-lg:scroll-mt-[76px]"/>
       <section
         onScroll={scrollIntoView}
+        onMouseEnter={scrollIntoView}
         className={`relative max-h-[calc(100vh_-_150px)] max-lg:max-h-[calc(100vh_-_76px)] overflow-auto ${cls.container}`}
       >
         <Image
