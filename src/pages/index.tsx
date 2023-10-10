@@ -1,32 +1,20 @@
 import Head from 'next/head';
 
+import translations from '../../public/locales/ua.json';
 import Categories from '../components/pages/home/categories';
 import About from '@/components/pages/home/about';
 import ContactInfo from '@/components/pages/home/contact-info';
+import Documents from '@/components/pages/home/documents';
 import HeroSection from '@/components/pages/home/hero-section';
 import Steps from '@/components/pages/home/steps';
 import TryYourSkills from '@/components/pages/home/try-your-skills';
-import { BulletsCard } from '@/components/sections/bullets-card';
-
-const POINTS_TITLE = <>Документи Для Навчання</>;
-const POINTS = [
-  <>Копія паспорта (Місце прописки неважливе, наявність обов′язкова)</>,
-  <>Копія ІПН (Ідентифікаційний податковий номер);</>,
-  <>Медична довідка (форма Ф-083);</>,
-  <>Фотографії (2шт. розміром 3.5x4.5);</>,
-  <>Для відкриття з вищої категорії на будь яку нижчу посвідчення водія</>,
-  <>Гарний настрій</>,
-];
 
 export default function Home() {
   return (
     <>
       <Head>
-        <title>САЛТІВСЬКИЙ УСТЦ ТСОУ м.Харкова (ДОСААФ)</title>
-        <meta
-          name="description"
-          content="САЛТІВСЬКИЙ УЧБОВИЙ СПОРТИВНО-ТЕХНІЧНИЙ ЦЕНТР ТОВАРИСТВА СПРИЯННЯ ОБОРОНІ УКРАЇНИ М. ХАРКОВА - це автошкола у місті Харків, що дає змогу легко навчатись водінню та легко його здавати"
-        />
+        <title>{translations['НАЗВА СТОРІНКИ']}</title>
+        <meta name="description" content={translations['ОПИС СТОРІНКИ']} />
       </Head>
       <HeroSection/>
       <div className="pt-20"/>
@@ -37,7 +25,7 @@ export default function Home() {
       <Steps/>
       <div className="bg-secondary relative z-[3]">
         <div className="pt-28"/>
-        <BulletsCard id="documents" title={POINTS_TITLE} points={POINTS}/>
+        <Documents/>
         <div className="pt-28" />
         <ContactInfo/>
         <div className="pt-28" />

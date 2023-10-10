@@ -1,37 +1,23 @@
+import translations from '../../../../public/locales/ua.json';
 import { TextLinksColType } from '@/components/layout/footer/types';
 
-export const FOOTER_LINKS = [
-  {
-    name: 'Privacy Policy',
-    href: '/privacy-policy',
-  },
-  {
-    name: 'Cookies',
-    href: '/cookie-policy',
-  },
-  {
-    name: 'Disclaimer',
-    href: '/disclaimer-for-brandgility-elateral',
-  },
-];
-
 export const HOME_LINKS: TextLinksColType = {
-  header: 'Головна',
+  header: translations['КОЛОНТИТУЛ стовпець 1 заголовок'],
   links: [
-    { label: 'Категорії', href: '/#categories' },
-    { label: 'Організація', href: '/#about' },
-    { label: 'Навчання', href: '/#steps' },
-    { label: 'Документи', href: '/#documents' },
+    { label: translations['НАВІГАЦІЯ посилання 1'], href: '/#categories' },
+    { label: translations['НАВІГАЦІЯ посилання 2'], href: '/#about' },
+    { label: translations['НАВІГАЦІЯ посилання 3'], href: '/#steps' },
+    { label: translations['НАВІГАЦІЯ посилання 4'], href: '/#documents' },
   ],
 };
 
 export const CONTACTS: TextLinksColType = {
-  header: 'Контакти',
+  header: translations['КОЛОНТИТУЛ стовпець 2 заголовок'],
   links: [
-    { label: 'вул. Ахієзерів, 48/50', href: '/#contact-map' },
-    { label: 'Водафон', href: 'tel:+38 (050) 185-43-72' },
-    { label: 'Київстар', href: 'tel:+38 (096) 827-31-96' },
-    { label: 'Пошта', href: 'mailto:auto@autoschool.org.ua' },
+    { label: translations['КОЛОНТИТУЛ стовпець 2 посилання 1'], href: '/#contact-map' },
+    { label: translations['КОЛОНТИТУЛ стовпець 2 посилання 2'], href: 'tel:+38 (050) 185-43-72' },
+    { label: translations['КОЛОНТИТУЛ стовпець 2 посилання 3'], href: 'tel:+38 (096) 827-31-96' },
+    { label: translations['КОЛОНТИТУЛ стовпець 2 посилання 4'], href: 'mailto:auto@autoschool.org.ua' },
   ],
 };
 

@@ -1,7 +1,6 @@
-'use client';
-
 import Link from 'next/link';
 
+import translations from '../../../../public/locales/ua.json';
 import { FOOTER_TEXT_LINKS_LIST } from '@/components/layout/footer/constants';
 import FooterLinksCol from '@/components/layout/footer/links-col';
 
@@ -12,7 +11,7 @@ export default function Footer() {
         <div className='flex max-lg:flex-col'>
           <div className="flex w-fit py-5 lg:py-0">
             <Link href="/#home-hero" className="text-3xlarge font-semibold max-sm:text-large">
-              САЛТІВСЬКИЙ УСТЦ ТСОУ
+              {translations['ЛОГО']}
             </Link>
           </div>
           <div className="flex gap-5 justify-end flex-grow">
@@ -33,7 +32,7 @@ export default function Footer() {
             {/*  </Link> */}
             {/* ))} */}
           </div>
-          <span className='text-[13px] mb-[10px] md:mb-[0]'>© 2023 САЛТІВСЬКИЙ УСТЦ ТСОУ М. ХАРКОВА. Усі права захищені</span>
+          <span className='text-[13px] mb-[10px] md:mb-[0]'>{translations['КОЛОНТИТУЛ права захищені']}</span>
         </div>
       </div>
     </footer>

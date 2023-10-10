@@ -1,6 +1,7 @@
 import Link from 'next/link';
 
 import cls from './header.module.css';
+import translations from '../../../../public/locales/ua.json';
 import { NAV_LINKS } from '@/components/layout/header/constants';
 import MobileMenu from '@/components/layout/header/mobile-menu';
 
@@ -11,7 +12,7 @@ export default function Header() {
         <nav className="mx-auto h-full flex max-w-7xl items-center justify-between" aria-label="Global">
           <div className="flex lg:flex-1 pl-4 lg:pl-0">
             <Link href="/#home-hero" className="text-3xlarge font-semibold max-lg:text-xlarge max-sm:text-large">
-              САЛТІВСЬКИЙ УСТЦ ТСОУ
+              {translations['ЛОГО']}
             </Link>
           </div>
           <div className="hidden lg:flex h-full">

@@ -1,23 +1,24 @@
+import translations from '../../../../public/locales/ua.json';
+
 export const NAV_LINKS = [
   {
-    name: <>Категорії</>,
+    name: translations['НАВІГАЦІЯ посилання 1'],
     href: '/#categories',
   },
   {
-    name: <>Організація</>,
+    name: translations['НАВІГАЦІЯ посилання 2'],
     href: '/#about',
   },
   {
-    name: <>Навчання</>,
+    name: translations['НАВІГАЦІЯ посилання 3'],
     href: '/#steps',
   },
   {
-    name: <>Документи</>,
+    name: translations['НАВІГАЦІЯ посилання 4'],
     href: '/#documents',
   },
   {
-    // eslint-disable-next-line react/no-unescaped-entities
-    name: <>Зв'язатись</>,
+    name: translations['НАВІГАЦІЯ посилання 5'],
     href: '/#contacts',
   },
 ];

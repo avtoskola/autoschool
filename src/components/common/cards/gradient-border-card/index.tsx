@@ -29,7 +29,7 @@ export default function GradientBorderCard(props: Props) {
     <div className={rootClassList}>
       <div className={wrapperClassList}>
         <div className={contentClassList}>
-          <p className="font-extralight text-2xl text-center sm:text-[33px] leading-[1.2em]">
+          <p className="font-extralight text-2xl text-center sm:text-[33px] leading-[1.2em] whitespace-pre-line">
             {props.mainText}
           </p>
           <p className="font-light text-md sm:text-[17px] leading-6 text-center">

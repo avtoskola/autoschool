@@ -1,18 +1,8 @@
-'use client';
-
 import Image from 'next/image';
 import React from 'react';
 
+import translations from '../../../../../public/locales/ua.json';
 import TextImage from '@/components/sections/text-image';
-
-const TITLE = <>Водійські курси</>;
-const TEXT = (
-  <>
-    Хороші водійські курси - мабуть, основна складова безаварійної, надійної їзди. Навчання в автошколі є тією основою,
-    в якій закладені початкові навички та вміння, що дозволяють новому водієві відчувати себе на дорозі впевнено,
-    удосконалювати стиль водіння.
-  </>
-);
 
 export default function HeroSection() {
   return (
@@ -20,8 +10,8 @@ export default function HeroSection() {
       id="home-hero"
       className="bg-gradient-green-blue-tiles bg-center bg-no-repeat bg-cover text-white py-20 px-6 scroll-mt-[150px] max-lg:scroll-mt-[76px]">
       <TextImage
-        title={TITLE}
-        text={TEXT}
+        title={translations['ПЕРША СЕКЦІЯ заголовок']}
+        text={translations['ПЕРША СЕКЦІЯ текст']}
         image={
           <>
             <Image

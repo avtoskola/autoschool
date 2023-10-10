@@ -1,7 +1,8 @@
 import React from 'react';
 
 import CategoryCard from './category-card';
-import { CATEGORIES_CARDS, DESCRIPTION, HEADER } from '@/components/pages/home/categories/constants';
+import translations from '../../../../../public/locales/ua.json';
+import { CATEGORIES_CARDS } from '@/components/pages/home/categories/constants';
 
 export default function Categories() {
   return (
@@ -9,10 +10,10 @@ export default function Categories() {
       <div className="flex flex-col gap-y-[71px] max-w-container mx-auto px-6 lg:px-0">
         <div className="flex flex-col gap-y-7">
           <h2 className="text-3xl font-semibold text-center md:text-4xlarge lg:text-start">
-            {HEADER}
+            {translations['КАТЕГОРІЇ заголовок']}
           </h2>
           <p className="text-md text-center lg:text-start md:text-medium">
-            {DESCRIPTION}
+            {translations['КАТЕГОРІЇ підзаголовок']}
           </p>
         </div>
         <div

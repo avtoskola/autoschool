@@ -34,7 +34,7 @@ export default function CategoryCard(props: Props) {
         <div className="mb-6">
           <p className="font-semibold text-3xlarge mb-1">{props.price}</p>
           {props.priceText
-            ? <p className="text-small">
+            ? <p className="text-small whitespace-pre-line">
               {props.priceText}
             </p>
             : null
@@ -51,7 +51,7 @@ export default function CategoryCard(props: Props) {
                 height={20}
               />
               <p className="text-small font-semibold leading-[1.2em]">{item.title}</p>
-              <p className="text-small col-start-2 col-end-3">{item.text}</p>
+              <p className="text-small col-start-2 col-end-3 whitespace-pre-line">{item.text}</p>
             </li>
           ))}
         </ul>
