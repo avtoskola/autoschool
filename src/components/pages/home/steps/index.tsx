@@ -24,7 +24,7 @@ export default function Steps() {
         id="steps"
         {...CAR_IMAGE}
         alt='car'
-        className="max-w-[180px] sticky left-1/2 top-[35%] rotate-180 -translate-x-1/2 z-[3] mb-[-375px] max-lg:mb-[-188px] max-md:max-w-[90px]"
+        className="max-w-[180px] sticky left-1/2 top-[35%] rotate-180 -translate-x-1/2 z-[3] mb-[-375px] max-md:mb-[-188px] max-md:max-w-[90px]"
       />
       <div className="max-w-container mx-auto relative grid grid-cols-[1fr_200px_1fr] max-md:grid-cols-[1fr_100px_1fr] ">
         {ROAD_STEPS.map((text, index) => (
