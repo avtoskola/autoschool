@@ -1,6 +1,7 @@
 import Image from 'next/image';
 import { ReactNode } from 'react';
 
+import RoadImage from '../../../../../../public/images/home/road.webp';
 import FadeInSection from '@/components/common/fade-in-section';
 import RoadSign from '@/components/pages/home/steps/road-sign';
 
@@ -20,10 +21,8 @@ export default function RoadStep(props: Props) {
 
       <Image
         className="w-full min-h-full"
-        src="/images/home/road.png"
+        src={RoadImage}
         alt="road"
-        width={83}
-        height={356}
       />
 
       <FadeInSection>

@@ -1,7 +1,7 @@
 import Image from 'next/image';
 import React from 'react';
 
-import image from '../../../../../public/images/home/auto-1.png';
+import image from '../../../../../public/images/home/auto-1.webp';
 import translations from '../../../../../public/locales/ua.json';
 import TextImage from '@/components/sections/text-image';
 
