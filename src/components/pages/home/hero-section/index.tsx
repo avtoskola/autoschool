@@ -1,6 +1,7 @@
 import Image from 'next/image';
 import React from 'react';
 
+import image from '../../../../../public/images/home/auto-1.png';
 import translations from '../../../../../public/locales/ua.json';
 import TextImage from '@/components/sections/text-image';
 
@@ -16,10 +17,9 @@ export default function HeroSection() {
           <>
             <Image
               className="w-[95%] md:w-[85%] lg:w-full"
-              src="/images/home/auto-1.png"
-              width="550"
-              height="254"
+              src={image}
               alt="auto"
+              priority
             />
           </>
         }
