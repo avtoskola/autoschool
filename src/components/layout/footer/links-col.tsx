@@ -11,7 +11,7 @@ interface Props {
 export default function FooterLinksCol(props: Props) {
   return (
     <div className="py-2.5 px-5 flex flex-wrap flex-col w-fit">
-      <h5 className="text-1.8xl font-bold mb-3">{props.textLinksCol.header}</h5>
+      <p className="text-1.8xl font-bold mb-3">{props.textLinksCol.header}</p>
       <ul>
         {props.textLinksCol.links.map((link) => (
           <li key={link.href} className="mb-[10px]">
