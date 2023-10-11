@@ -5,6 +5,7 @@ interface Props {
 
 function Map(props: Props) {
   return <iframe
+    title="Google map with our location"
     id={props.id}
     className={props.className}
     width="600"

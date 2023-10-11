@@ -7,9 +7,9 @@ export default function About() {
       <GradientBorderCard
         contentClassName="!p-[5%] !gap-y-0 max-lg:!py-10"
         additionalContent={
-          <h3 className="absolute bg-white whitespace-nowrap -top-6 left-1/2 -translate-x-1/2 px-8 text-3xlarge font-semibold mb-10 max-md:text-xlarge max-md:px-3 max-md:-top-4">
+          <h2 className="absolute bg-white whitespace-nowrap -top-6 left-1/2 -translate-x-1/2 px-8 text-3xlarge font-semibold mb-10 max-md:text-xlarge max-md:px-3 max-md:-top-4">
             {translations['ОРГАНІЗАЦІЯ заголовок']}
-          </h3>
+          </h2>
         }
         mainText={translations['ОРГАНІЗАЦІЯ текст']}
       />

@@ -21,7 +21,7 @@ export default function CategoryCard(props: Props) {
     <CardWhitePrimary
       className="flex-1 flex flex-col min-w-[250] max-w-[350px] rounded-xl sm:min-w-[330px]">
       <div className="flex justify-between items-center px-4 py-3 border-b-2 border-b-gray-500 h-20">
-        <h4 className="text-xlarge font-semibold max-sm:font-medium">{props.title}</h4>
+        <p className="text-xlarge font-semibold max-sm:font-medium">{props.title}</p>
         <Image
           className="max-w-[80px] max-h-[65px]"
           src={props.image}
