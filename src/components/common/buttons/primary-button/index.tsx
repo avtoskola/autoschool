@@ -5,7 +5,7 @@ const SIZES_MAP = {
   '10-18': 'py-[10px] px-[18px]',
   '10-23': 'py-[10px] px-[23px]',
   '10-28': 'py-[10px] px-[28px]',
-  '10-34': 'py-[10px] px-[34px]',
+  '10-34': 'py-[10px] px-[34px] max-sm:py-[7px] max-sm:px-[28px]',
   '10-39': 'py-[10px] px-[39px] max-sm:py-[9px] max-sm:px-[32px]',
   '10-44': 'py-[10px] px-[44px]',
 };

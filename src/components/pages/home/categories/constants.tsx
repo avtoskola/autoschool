@@ -1,10 +1,15 @@
 import translations from '../../../../../public/locales/ua.json';
+import { CardInfoType } from '@/components/pages/home/categories/types';
 
-export const CATEGORIES_CARDS = [
+export const CATEGORIES_CARDS: CardInfoType[] = [
   {
     title: translations['КАТЕГОРІЇ категорія А'],
     price: translations['КАТЕГОРІЇ категорія А ціна'],
     priceText: translations['КАТЕГОРІЇ категорія А ціна пояснення'],
+    categoryDescription: {
+      title: translations['КАТЕГОРІЇ категорія А'],
+      text: translations['КАТЕГОРІЇ категорія А пояснення'],
+    },
     list: [
       {
         title: <>Теоретичний курс: </>,
@@ -27,6 +32,10 @@ export const CATEGORIES_CARDS = [
     title: translations['КАТЕГОРІЇ категорія В'],
     price: translations['КАТЕГОРІЇ категорія В ціна'],
     priceText: translations['КАТЕГОРІЇ категорія В ціна пояснення'],
+    categoryDescription: {
+      title: translations['КАТЕГОРІЇ категорія В'],
+      text: translations['КАТЕГОРІЇ категорія В пояснення'],
+    },
     list: [
       {
         title: <>Теоретичний курс: </>,
@@ -49,6 +58,17 @@ export const CATEGORIES_CARDS = [
     title: translations['КАТЕГОРІЇ категорія з В на С'],
     price: translations['КАТЕГОРІЇ категорія з В на С ціна'],
     priceText: translations['КАТЕГОРІЇ категорія з В на С ціна пояснення'],
+    categoryDescription: {
+      title: translations['КАТЕГОРІЇ категорія з В на С'],
+      text: translations['КАТЕГОРІЇ категорія з В на С пояснення'],
+    },
+    additionalDocuments: {
+      title: translations['КАТЕГОРІЇ категорія з В на С додаткові документи заголовок'],
+      text: [
+        translations['КАТЕГОРІЇ категорія з В на С додаткові документи текст 1'],
+        translations['КАТЕГОРІЇ категорія з В на С додаткові документи текст 2'],
+      ],
+    },
     list: [
       {
         title: <>Теоретичний курс: </>,
@@ -71,6 +91,17 @@ export const CATEGORIES_CARDS = [
     title: translations['КАТЕГОРІЇ категорія з С на СЕ'],
     price: translations['КАТЕГОРІЇ категорія з С на СЕ ціна'],
     priceText: translations['КАТЕГОРІЇ категорія з С на СЕ ціна пояснення'],
+    categoryDescription: {
+      title: translations['КАТЕГОРІЇ категорія з С на СЕ'],
+      text: translations['КАТЕГОРІЇ категорія з С на СЕ пояснення'],
+    },
+    additionalDocuments: {
+      title: translations['КАТЕГОРІЇ категорія з С на СЕ  додаткові документи заголовок'],
+      text: [
+        translations['КАТЕГОРІЇ категорія з С на СЕ  додаткові документи текст 1'],
+        translations['КАТЕГОРІЇ категорія з С на СЕ  додаткові документи текст 2'],
+      ],
+    },
     list: [
       {
         title: <>Теоретичний курс: </>,
@@ -88,6 +119,18 @@ export const CATEGORIES_CARDS = [
   {
     title: translations['КАТЕГОРІЇ допідготовка'],
     price: translations['КАТЕГОРІЇ допідготовка ціна'],
+    categoryDescription: {
+      title: translations['КАТЕГОРІЇ допідготовка'],
+      text: <>
+        {translations['КАТЕГОРІЇ категорія А пояснення']}
+        <br/><br/>
+        {translations['КАТЕГОРІЇ категорія В пояснення']}
+        <br/><br/>
+        {translations['КАТЕГОРІЇ категорія з В на С пояснення']}
+        <br/><br/>
+        {translations['КАТЕГОРІЇ категорія з С на СЕ пояснення']}
+      </>,
+    },
     list: [
       {
         title: <>Категорії: </>,

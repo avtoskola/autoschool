@@ -35,6 +35,7 @@ module.exports = {
         yellow: '#FB923C',
         'gray-light': '#F2F2F2',
         'gray-lighter': '#F1F1F1',
+        'gray-secondary': '#F3F4F6',
       },
       maxWidth: {
         container: '1140px',

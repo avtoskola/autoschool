@@ -7,7 +7,7 @@ import MobileMenu from '@/components/layout/header/mobile-menu';
 
 export default function Header() {
   return (
-    <header className="h-[76px] lg:h-[150px] bg-white fixed top-0 w-full z-10">
+    <header className="h-[76px] lg:h-[150px] bg-white fixed top-0 w-full z-20">
       <div className=" max-w-container m-auto h-full">
         <nav className="mx-auto h-full flex max-w-7xl items-center justify-between" aria-label="Global">
           <div className="flex lg:flex-1 pl-4 lg:pl-0">

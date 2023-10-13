@@ -16,17 +16,22 @@ export default function ContactInfo() {
           <div className="text-medium flex flex-col gap-y-1 max-sm:text-mob-m">
             <p>{translations["ЗВ'ЯЗАТИСЬ адреса"]}</p>
             <p>
-              <Link className="hover:underline" href="tel:+38 (050) 185-43-72">
+              <Link className="hover:underline" href="tel:+380501854372">
                 {translations["ЗВ'ЯЗАТИСЬ водафон"]}
               </Link>
             </p>
             <p>
-              <Link className="hover:underline" href="tel:+38 (096) 827-31-96">
-                {translations["ЗВ'ЯЗАТИСЬ київстар"]}
+              <Link className="hover:underline" href="tel:+380968361607">
+                {translations["ЗВ'ЯЗАТИСЬ київстар 1"]}
               </Link>
             </p>
             <p>
-              <Link className="hover:underline" href="mailto:auto@autoschool.org.ua">
+              <Link className="hover:underline" href="tel:+380961681588">
+                {translations["ЗВ'ЯЗАТИСЬ київстар 2"]}
+              </Link>
+            </p>
+            <p>
+              <Link className="hover:underline" href="mailto:mustcavtochkola@ukr.net">
                 {translations["ЗВ'ЯЗАТИСЬ пошта"]}
               </Link>
             </p>

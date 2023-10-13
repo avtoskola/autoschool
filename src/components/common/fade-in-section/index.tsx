@@ -1,5 +1,3 @@
-'use client';
-
 import React, { PropsWithChildren, useEffect, useRef, useState } from 'react';
 
 interface Props extends PropsWithChildren {
@@ -30,7 +28,7 @@ export default function FadeInSection(props: Props) {
         animationPlayState: isVisible ? 'running' : 'paused',
         opacity: isVisible ? 1 : 0,
       }}
-      className={`animate-fadeIn ${props.className}`}
+      className={`animate-fadeIn ${props.className ?? ''}`}
     >
       {props.children}
     </div>
