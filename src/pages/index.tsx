@@ -17,18 +17,18 @@ export default function Home() {
         <meta name="description" content={translations['ОПИС СТОРІНКИ']} />
       </Head>
       <HeroSection/>
-      <div className="pt-20"/>
+      <div className="pt-20 max-sm:pt-10"/>
       <Categories/>
-      <div className="pt-32"/>
+      <div className="pt-32 max-sm:pt-16"/>
       <About/>
-      <div className="pt-32"/>
+      <div className="pt-32 max-sm:pt-16"/>
       <Steps/>
       <div className="bg-secondary relative z-[3]">
-        <div className="pt-28"/>
+        <div className="pt-28 max-sm:pt-14"/>
         <Documents/>
-        <div className="pt-28" />
+        <div className="pt-28 max-sm:pt-14" />
         <ContactInfo/>
-        <div className="pt-28" />
+        <div className="pt-28 max-sm:pt-14" />
       </div>
       <TryYourSkills/>
     </>

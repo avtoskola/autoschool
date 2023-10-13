@@ -6,7 +6,7 @@ const SIZES_MAP = {
   '10-23': 'py-[10px] px-[23px]',
   '10-28': 'py-[10px] px-[28px]',
   '10-34': 'py-[10px] px-[34px]',
-  '10-39': 'py-[10px] px-[39px]',
+  '10-39': 'py-[10px] px-[39px] max-sm:py-[9px] max-sm:px-[32px]',
   '10-44': 'py-[10px] px-[44px]',
 };
 
@@ -17,7 +17,7 @@ interface Props extends DetailedHTMLProps<ButtonHTMLAttributes<HTMLButtonElement
 
 export default function PrimaryButton({ children, className, ...buttonProps }: Props) {
   const buttonClassList = [
-    'font-semibold leading-[1.4em] bg-purple rounded-xl text-sm',
+    'font-semibold leading-[1.4em] bg-purple rounded-xl text-sm max-sm:text-mob-xs max-sm:rounded-[7px]',
     ...(buttonProps.size ? [SIZES_MAP[buttonProps.size]] : []),
     (buttonProps.disabled
       ? 'border-gray-200 border-2 bg-white text-semi-white cursor-default'

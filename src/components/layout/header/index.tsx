@@ -11,7 +11,7 @@ export default function Header() {
       <div className=" max-w-container m-auto h-full">
         <nav className="mx-auto h-full flex max-w-7xl items-center justify-between" aria-label="Global">
           <div className="flex lg:flex-1 pl-4 lg:pl-0">
-            <Link href="/#home-hero" className="text-3xlarge font-semibold max-lg:text-xlarge max-sm:text-large">
+            <Link href="/#home-hero" className="text-3xlarge font-semibold max-lg:text-xlarge max-sm:text-mob-3xl">
               {translations['ЛОГО']}
             </Link>
           </div>

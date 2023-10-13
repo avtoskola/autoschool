@@ -15,15 +15,15 @@ export function BulletsCard(props: Props) {
     <FadeInSection>
       <section
         id={props.id}
-        className={`max-w-container md:mx-auto shadow-section bg-white rounded-xl mx-6 p-4 md:pt-12 md:px-16 md:pb-16 max-md:p-6 scroll-mt-[150px] max-lg:scroll-mt-[76px] ${props.className || ''}`}>
-        <h2 className="text-3xlarge font-semibold text-center mb-16 max-md:text-xlarge max-md:mb-8">
+        className={`max-w-container shadow-section bg-white rounded-xl mx-auto pt-12 px-16 pb-16 md:max-xl:mx-6 max-sm:mx-6 max-md:p-6 max-md:max-w-lg scroll-mt-[150px] max-lg:scroll-mt-[76px] ${props.className || ''}`}>
+        <h2 className="text-3xlarge font-semibold text-center mb-16 max-md:text-xlarge max-md:mb-8 max-sm:text-mob-3xl">
           {props.title}
         </h2>
         <div className="grid gap-x-20 gap-y-3.5 grid-cols-1 md:grid-cols-2">
           {props.points.map((point, index) => (
-            <div key={index} className="flex items-center gap-8">
-              <Image src="/images/icons/check.svg" alt="check icon" width={30} height={30}/>
-              <span className="text-medium max-md:text-small">
+            <div key={index} className="flex items-center gap-8 max-sm:gap-x-3">
+              <Image src="/images/icons/check.svg" className="max-sm:w-4 max-sm:h-4" alt="check icon" width={30} height={30}/>
+              <span className="text-medium max-md:text-small max-sm:text-mob-m">
                 {point}
               </span>
             </div>

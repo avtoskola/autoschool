@@ -12,9 +12,9 @@ const Portal = ({ children }: { children: ReactNode }) => {
 
   useEffect(() => {
     el.setAttribute('id', 'portal');
-    document.body.appendChild(el);
+    document.querySelector('.app')?.appendChild(el);
     return () => {
-      document.body.removeChild(el);
+      document.querySelector('.app')?.removeChild(el);
     };
   }, [el]);
 

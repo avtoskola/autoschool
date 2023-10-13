@@ -36,7 +36,7 @@ export default function App({ Component, pageProps }: AppProps) {
              gtag('config', '${process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS_ID}');
          `}
       </Script>
-      <div className={font.className}>
+      <div className={`${font.className} app`}>
         <RootLayout>
           <Component {...pageProps} />
         </RootLayout>

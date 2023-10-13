@@ -21,7 +21,7 @@ export default function GradientBorderCard(props: Props) {
   ].join(' ');
 
   const contentClassList = [
-    'flex flex-col items-center justify-center gap-y-10 w-full h-full bg-transparent p-[11%]',
+    'flex flex-col items-center justify-center gap-y-10 w-full h-full bg-transparent p-[11%] max-sm:gap-y-5',
     props.contentClassName,
   ].join(' ');
 
@@ -29,10 +29,10 @@ export default function GradientBorderCard(props: Props) {
     <div className={rootClassList}>
       <div className={wrapperClassList}>
         <div className={contentClassList}>
-          <p className="font-extralight text-2xl text-center sm:text-[33px] leading-[1.2em] whitespace-pre-line">
+          <p className="font-extralight text-[33px] whitespace-pre-line text-center leading-[1.2em] max-sm:text-[22px] max-sm:leading-[1.4em]">
             {props.mainText}
           </p>
-          <p className="font-light text-md sm:text-[17px] leading-6 text-center">
+          <p className="font-light text-[17px] leading-6 text-center max-sm:text-[10px]">
             {props.subText}
           </p>
           {props.bottomContent}

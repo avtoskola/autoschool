@@ -18,6 +18,17 @@ module.exports = {
         '4xlarge': ['35px'],
         '5xlarge': ['44.5px'],
         '6xlarge': ['45.6px', '2.8rem'],
+
+        'mob-ss': ['6.7px', '1.375em'],
+        'mob-xs': ['8px', '1.375em'],
+        'mob-sm': ['9.5px', '1.375em'],
+        'mob-m': ['11px', '1.375em'],
+        'mob-ml': ['11.5px', '1.375em'],
+        'mob-l': ['13px', '1.55em'],
+        'mob-2xl': ['15.5px', '1.55em'],
+        'mob-3xl': ['19px'],
+        'mob-4xl': ['20px', '1.4em'],
+        'mob-6xl': ['28px', '1.2em'],
       },
       colors: {
         purple: '#6B21A8',

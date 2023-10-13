@@ -11,13 +11,13 @@ export default function TryYourSkills(props: Props) {
   return (
     <section
       id="try-your-skills"
-      className={`bg-bright-blue-green-grid bg-no-repeat bg-cover bg-center m-auto py-16 md:pb-[80px] md:pt-[74px] text-white max-lg:px-4 ${props.className ?? ''}`}
+      className={`bg-bright-blue-green-grid bg-no-repeat bg-cover bg-center m-auto py-16 md:py-18 text-white max-lg:px-4 max-sm:py-8 ${props.className ?? ''}`}
     >
-      <h2 className="text-3xlarge font-semibold mb-2 text-center max-lg:text-3xl">{translations['ПЕРЕВІРИТИ ЗНАННЯ заголовок']}</h2>
-      <p className="text-medium-l text-center mx-auto max-w-2xl max-lg:text-base"></p>
+      <h2 className="text-3xlarge font-semibold mb-2 text-center max-lg:text-3xl max-sm:text-mob-4xl">{translations['ПЕРЕВІРИТИ ЗНАННЯ заголовок']}</h2>
+      {/* <p className="text-medium-l text-center mx-auto max-w-2xl max-lg:text-base"></p> */}
       <Link href="https://green-way.com.ua/uk/test-pdd" target="_blank">
         <PrimaryButton
-          className="block mx-auto mt-7"
+          className="block mx-auto mt-7 max-sm:mt-3"
           size="10-39"
         >
           {translations['ПЕРЕВІРИТИ ЗНАННЯ кнопка']}

@@ -27,7 +27,7 @@ export default function RoadStep(props: Props) {
 
       <FadeInSection>
         <div className="flex flex-col justify-center items-center h-[calc(80vh_-_150px)] max-lg:h-[calc(80vh_-_76px)] max-sm:[calc(50vh_-_76px)]">
-          <p className="max-w-[80%] text-xlarge text-center max-md:text-large max-sm:text-small">
+          <p className="max-w-[80%] text-xlarge text-center max-md:text-large max-sm:text-mob-sm">
             {props.text}
           </p>
         </div>
