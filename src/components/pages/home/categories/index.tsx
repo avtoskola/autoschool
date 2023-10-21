@@ -10,7 +10,7 @@ export default function Categories() {
     <section id="categories" className="scroll-mt-[150px] max-lg:scroll-mt-[76px] ">
       <div className="flex flex-col gap-y-[40px] max-w-container mx-auto px-6 xl:px-0 max-sm:gap-y-[30px]">
         <div className="max-lg:max-w-lg max-lg:self-center">
-          <h2 className="text-3xl mb-7 font-semibold text-center md:text-4xlarge lg:text-start max-sm:text-mob-3xl max-sm:mb-1.5">
+          <h2 className="text-3xl mb-7 font-semibold text-center md:text-4xlarge lg:text-start max-sm:text-mob-4xl max-sm:mb-1.5">
             {translations['КАТЕГОРІЇ заголовок']}
           </h2>
           <div className="sm:max-lg:text-center">

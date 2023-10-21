@@ -16,7 +16,7 @@ export function BulletsCard(props: Props) {
       <section
         id={props.id}
         className={`max-w-container shadow-section bg-white rounded-xl mx-auto pt-12 px-16 pb-16 md:max-xl:mx-6 max-sm:mx-6 max-md:p-6 max-md:max-w-lg scroll-mt-[150px] max-lg:scroll-mt-[76px] ${props.className || ''}`}>
-        <h2 className="text-3xlarge font-semibold text-center mb-16 max-md:text-xlarge max-md:mb-8 max-sm:text-mob-3xl">
+        <h2 className="text-3xlarge font-semibold text-center mb-16 max-md:text-xlarge max-md:mb-8 max-sm:text-mob-4xl">
           {props.title}
         </h2>
         <div className="grid gap-x-20 gap-y-3.5 grid-cols-1 md:grid-cols-2">

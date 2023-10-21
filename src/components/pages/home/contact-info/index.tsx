@@ -6,7 +6,7 @@ import Map from '@/components/common/map';
 export default function ContactInfo() {
   return (
     <section id="contacts" className="max-w-container m-auto max-lg:px-4 scroll-mt-[150px] max-lg:scroll-mt-[74px]">
-      <h2 className="text-6xlarge font-semibold text-center mb-8 md:mb-[75px] max-md:text-3xlarge max-sm:text-mob-6xl max-sm:mb-5">
+      <h2 className="text-6xlarge font-semibold text-center mb-8 md:mb-[75px] max-md:text-3xlarge max-sm:text-mob-4xl max-sm:mb-5">
         {translations["ЗВ'ЯЗАТИСЬ заголовок"]}
       </h2>
       <div
