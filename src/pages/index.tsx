@@ -23,10 +23,12 @@ export default function Home() {
       <About/>
       <div className="pt-32 max-sm:pt-16"/>
       <Steps/>
-      <div className="pt-28 max-sm:pt-14"/>
-      <Documents/>
-      <div className="pt-28 max-sm:pt-14" />
-      <ContactInfo/>
+      <div className="bg-secondary">
+        <div className="pt-28 max-sm:pt-14"/>
+        <Documents/>
+        <div className="pt-28 max-sm:pt-14" />
+        <ContactInfo/>
+      </div>
       <div className="pt-28 max-sm:pt-14" />
       <TryYourSkills/>
     </>

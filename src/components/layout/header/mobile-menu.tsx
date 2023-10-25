@@ -31,7 +31,7 @@ export default function MobileMenu() {
       </div>
       <CustomDialog isOpen={mobileMenuOpen} onClose={() => setMobileMenuOpen(false)}>
         <div
-          className="fixed inset-y-0 right-0 z-10 w-full overflow-y-auto bg-white px-4 py-4 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
+          className="fixed inset-y-0 right-0 z-20 w-full overflow-y-auto bg-white px-4 py-4 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
           <div className="flex items-center justify-between">
             <Link href="/#home-hero" className="text-3xlarge font-semibold max-lg:text-xlarge max-sm:text-large">
               САЛТІВСЬКИЙ УСТЦ ТСОУ

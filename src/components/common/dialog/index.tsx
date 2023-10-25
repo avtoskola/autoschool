@@ -42,7 +42,7 @@ const CustomDialog = ({ onClose, isOpen, children }: DialogProps) => {
       <div
         role="dialog"
         aria-modal="true"
-        className="fixed bg-black overflow-hidden opacity-50 w-screen h-screen z-10 top-0"
+        className="fixed bg-black overflow-hidden opacity-50 w-screen h-screen z-20 top-0"
         onClick={onClose}
       />
       {children}
