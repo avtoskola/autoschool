@@ -15,6 +15,7 @@ export default function Home() {
       <Head>
         <title>{translations['НАЗВА СТОРІНКИ']}</title>
         <meta name="description" content={translations['ОПИС СТОРІНКИ']} />
+        <meta name="keywords" content={translations['КЛЮЧОВІ СЛОВА']} />
       </Head>
       <HeroSection/>
       <div className="pt-20 max-sm:pt-10"/>
