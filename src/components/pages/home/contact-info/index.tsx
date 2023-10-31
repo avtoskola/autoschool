@@ -15,6 +15,7 @@ export default function ContactInfo() {
           <p className="text-lg font-semibold mb-4 max-sm:text-mob-l max-sm:mb-2">{translations["ЗВ'ЯЗАТИСЬ школа"]}</p>
           <div className="text-medium flex flex-col gap-y-1 max-sm:text-mob-m">
             <p>{translations["ЗВ'ЯЗАТИСЬ адреса"]}</p>
+            <p>{translations["ЗВ'ЯЗАТИСЬ часи прийому"]}</p>
             <p>
               <Link className="hover:underline" href="tel:+380501854372">
                 {translations["ЗВ'ЯЗАТИСЬ водафон"]}

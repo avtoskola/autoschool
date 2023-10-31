@@ -1,8 +1,10 @@
 import Image from 'next/image';
+import Link from 'next/link';
 import { ReactNode } from 'react';
 
 import translations from '../../../../../../public/locales/ua.json';
 import CategoryModal from '../category-modal';
+import PrimaryButton from '@/components/common/buttons/primary-button';
 import CardWhitePrimary from '@/components/common/cards/card-white-primary';
 import DocumentsModal from '@/components/pages/home/categories/documents-modal';
 
@@ -65,7 +67,7 @@ export default function CategoryCard(props: Props) {
           ))}
         </ul>
       </div>
-      <div className="flex mx-4 mb-3 gap-x-2 max-sm:mt-5">
+      <div className="grid grid-cols-2 mx-4 mb-3 gap-2 max-sm:mt-5">
         <CategoryModal
           buttonLabel={translations['КАТЕГОРІЇ кнопка про категорію']}
           modalContent={props.categoryDescription}
@@ -75,7 +77,19 @@ export default function CategoryCard(props: Props) {
               buttonLabel={translations['КАТЕГОРІЇ кнопка додаткові документи']}
               modalContent={props.additionalDocuments}
           />
-          : null}
+          : (
+            <Link href="/#documents" className="w-full h-fit flex-1">
+              <PrimaryButton size="8-20" className="w-full">
+                {translations['КАТЕГОРІЇ кнопка додаткові документи']}
+              </PrimaryButton>
+            </Link>
+          )
+        }
+        <Link href="/#contacts" className="w-full h-fit flex-1 col-span-2">
+          <PrimaryButton size="8-20" className="w-full">
+            {translations['КАТЕГОРІЇ кнопка записатись']}
+          </PrimaryButton>
+        </Link>
       </div>
 
     </CardWhitePrimary>

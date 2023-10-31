@@ -15,7 +15,7 @@ export default function CategoryModal(props: Props) {
 
   return (
     <>
-      <PrimaryButton onClick={onOpen} className="max-w-full h-fit flex-1" size="8-20">
+      <PrimaryButton onClick={onOpen} className="max-w-full h-fit" size="8-20">
         {props.buttonLabel}
       </PrimaryButton>
       <Modal isOpen={open} onClose={onClose}
