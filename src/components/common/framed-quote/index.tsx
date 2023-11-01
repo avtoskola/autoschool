@@ -45,7 +45,11 @@ export default function FramedQuote(props: Props) {
   );
 }
 
-function QuoteBlock(props: { className?: string }) {
+interface QuoteBlockProps {
+    className?: string
+}
+
+function QuoteBlock(props: QuoteBlockProps) {
   return (
     <div
       className={['flex justify-center items-center bg-transparent absolute left-1/2 transform -translate-x-1/2 aspect-square overflow-hidden w-[16%] h-[85px]', props.className].join(' ')}>
