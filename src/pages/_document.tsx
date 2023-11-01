@@ -7,7 +7,7 @@ export default function Document() {
     <Html lang="en">
       <Head >
         <link rel="icon" href="/images/favicon.ico" />
-        <meta name="google-site-verification" content="WBSlXwpNU39dvsWbIYk2h9_85iSO31ZrqqcP_7d4jOs" />
+        <meta name="google-site-verification" content={process.env.NEXT_PUBLIC_GOOGLE_SITE_VARIFICATION_ID} />
         <meta property="og:title" content={translations['НАЗВА СТОРІНКИ']}/>
         <meta property="og:image" content="/images/auto-1.webp"/>
       </Head>
