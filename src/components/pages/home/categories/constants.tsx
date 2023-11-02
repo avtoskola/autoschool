@@ -1,3 +1,8 @@
+import Auto2Icon from '../../../../../public/images/home/auto-2.svg';
+import LorryIcon from '../../../../../public/images/home/lorry.svg';
+import MotorcycleIcon from '../../../../../public/images/home/motocycle.svg';
+import truckWithTrailerIcon from '../../../../../public/images/home/truck_with_trailer.svg';
+import WheelIcon from '../../../../../public/images/home/wheel.svg';
 import translations from '../../../../../public/locales/ua.json';
 import { CardInfoType } from '@/components/pages/home/categories/types';
 
@@ -24,9 +29,7 @@ export const CATEGORIES_CARDS: CardInfoType[] = [
         text: translations['КАТЕГОРІЇ категорія А навчання з'],
       },
     ],
-    image: '/images/home/motocycle.svg',
-    imageWidth: 2084,
-    imageHeight: 1389,
+    image: MotorcycleIcon,
   },
   {
     title: translations['КАТЕГОРІЇ категорія В'],
@@ -50,9 +53,7 @@ export const CATEGORIES_CARDS: CardInfoType[] = [
         text: translations['КАТЕГОРІЇ категорія В навчання з'],
       },
     ],
-    image: '/images/home/auto-2.svg',
-    imageWidth: 2084,
-    imageHeight: 1389,
+    image: Auto2Icon,
   },
   {
     title: translations['КАТЕГОРІЇ категорія з В на С'],
@@ -83,9 +84,7 @@ export const CATEGORIES_CARDS: CardInfoType[] = [
         text: translations['КАТЕГОРІЇ категорія з В на С практика'],
       },
     ],
-    image: '/images/home/lorry.svg',
-    imageWidth: 512,
-    imageHeight: 512,
+    image: LorryIcon,
   },
   {
     title: translations['КАТЕГОРІЇ категорія з С на СЕ'],
@@ -112,9 +111,7 @@ export const CATEGORIES_CARDS: CardInfoType[] = [
         text: translations['КАТЕГОРІЇ категорія з С на СЕ практичний курс'],
       },
     ],
-    image: '/images/home/truck.svg',
-    imageWidth: 2084,
-    imageHeight: 1389,
+    image: truckWithTrailerIcon,
   },
   {
     title: translations['КАТЕГОРІЇ допідготовка'],
@@ -145,8 +142,6 @@ export const CATEGORIES_CARDS: CardInfoType[] = [
         text: translations['КАТЕГОРІЇ допідготовка теоретичний курс'],
       },
     ],
-    image: '/images/home/wheel.svg',
-    imageWidth: 200,
-    imageHeight: 200,
+    image: WheelIcon,
   },
 ];

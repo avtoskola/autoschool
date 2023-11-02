@@ -15,8 +15,6 @@ interface Props {
         text: ReactNode;
     }[];
     image: string;
-    imageWidth: number;
-    imageHeight: number;
     price: ReactNode;
     priceText?: ReactNode;
     categoryDescription: { text: ReactNode; title: ReactNode };
@@ -33,8 +31,6 @@ export default function CategoryCard(props: Props) {
           className="max-w-[80px] max-h-[65px] max-sm:max-w-[40px] max-sm:max-h-[32.5px]"
           src={props.image}
           alt="transport"
-          width={props.imageWidth}
-          height={props.imageHeight}
         />
       </div>
       <div className="p-4 max-sm:p-3 h-full">

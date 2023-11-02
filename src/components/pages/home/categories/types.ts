@@ -10,8 +10,6 @@ export type CardInfoType = {
     },
     list: {title: ReactNode; text: ReactNode}[],
     image: string,
-    imageWidth: number,
-    imageHeight: number,
     additionalDocuments?: {
         title: ReactNode,
         text: ReactNode[],
