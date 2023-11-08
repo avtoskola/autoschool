@@ -1,5 +1,4 @@
 import { Head, Html, Main, NextScript } from 'next/document';
-import Script from 'next/script';
 
 import translations from '../../public/locales/ua.json';
 
@@ -19,7 +18,7 @@ export default function Document() {
         <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"/>
         <link rel="manifest" href="/site.webmanifest"/>
 
-        <Script id="hotjar">
+        <script id="hotjar">
           {`
             (function(h,o,t,j,a,r){
               h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
@@ -30,7 +29,7 @@ export default function Document() {
               a.appendChild(r);
             })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
           `}
-        </Script>
+        </script>
       </Head>
       <body>
         <Main />
